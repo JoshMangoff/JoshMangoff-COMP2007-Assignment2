@@ -208,6 +208,7 @@
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\FoodType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -292,11 +293,13 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Store\Browse.cshtml" />
+    <Content Include="Views\Store\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\images\" />
-    <Folder Include="Views\Store\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

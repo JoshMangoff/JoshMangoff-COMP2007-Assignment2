@@ -13,16 +13,13 @@ namespace JoshMangoff_COMP2007_Assignment2.Models
 
         }
         
-        public Food(string Title, string Description, int Price, string SmallImgUrl, string BigImgUrl)
+        public Food(string Title)
         {
             this.Title = Title;
-            this.Description = Description;
-            this.Price = Price;
-            this.SmallImgUrl = SmallImgUrl;
-            this.BigImgUrl = BigImgUrl;
         }
 
         public string Title { get; set; }
+        public FoodType Type { get; set;  }
         public string Description { get; set; }
         public int Price { get; set; }
         public string SmallImgUrl { get; set; }

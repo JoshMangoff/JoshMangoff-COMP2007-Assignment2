@@ -16,16 +16,16 @@ namespace JoshMangoff_COMP2007_Assignment2.Controllers
         }
 
         //GET: Store/Browse?type=Dessert
-        public string Browse(string type = "Dessert")
+        public ActionResult Browse(string foodType = "Dessert")
         {
-            string message = HttpUtility.HtmlEncode("List of food of " + type +" goes here");
-            return message;
+            FoodType foodTypeModel = new FoodType(foodType);
+            return View(foodTypeModel);
         }
 
         // GET: Store/Details/2
         public ActionResult Details(int id = 1)
         {
-            Food food = new Food(id);
+            Food food = new Food("Food " + id);
             return View(food);
         }
     }
