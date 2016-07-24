@@ -18,11 +18,11 @@ namespace JoshMangoff_COMP2007_Assignment2.Models
             this.Title = Title;
         }
 
-        public string Title { get; set; }
-        public FoodType Type { get; set;  }
-        public string Description { get; set; }
-        public int Price { get; set; }
-        public string SmallImgUrl { get; set; }
-        public string BigImgUrl { get; set; }
+        public virtual string Title { get; set; }
+        public virtual FoodType Type { get; set;  }
+        public virtual string Description { get; set; }
+        public virtual decimal Price { get; set; }
+        public virtual string SmallImgUrl { get; set; }
+        public virtual string BigImgUrl { get; set; }
     }
 }

@@ -17,6 +17,6 @@ namespace JoshMangoff_COMP2007_Assignment2.Models
             this.Name = Name;
         }
 
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
     }
 }
