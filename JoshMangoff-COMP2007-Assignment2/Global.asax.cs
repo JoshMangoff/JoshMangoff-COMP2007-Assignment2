@@ -12,6 +12,7 @@ namespace JoshMangoff_COMP2007_Assignment2
     {
         protected void Application_Start()
         {
+            System.Data.Entity.Database.SetInitializer(new JoshMangoff_COMP2007_Assignment2.Models.SampleData());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

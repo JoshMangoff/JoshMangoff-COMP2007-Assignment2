@@ -9,23 +9,26 @@ namespace JoshMangoff_COMP2007_Assignment2.Controllers
 {
     public class StoreController : Controller
     {
+        FoodStoreContext storeDB = new FoodStoreContext();
+
         // GET: Store
-        public string Index()
+        public ActionResult Index()
         {
-            return "List of food types goes here";
+            List<FoodType> foodtypes = storeDB.FoodTypes.ToList();
+            return View(foodtypes);
         }
 
         //GET: Store/Browse?type=Dessert
         public ActionResult Browse(string foodType = "Dessert")
         {
-            FoodType foodTypeModel = new FoodType(foodType);
+            FoodType foodTypeModel = storeDB.FoodTypes.Include("FoodType").Single(f => f.Name == foodType);
             return View(foodTypeModel);
         }
 
         // GET: Store/Details/2
         public ActionResult Details(int id = 1)
         {
-            Food food = new Food("Food " + id);
+            Food food = storeDB.Foods.Find(id);
             return View(food);
         }
     }
