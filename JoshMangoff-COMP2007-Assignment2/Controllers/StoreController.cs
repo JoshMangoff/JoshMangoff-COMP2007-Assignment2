@@ -21,7 +21,7 @@ namespace JoshMangoff_COMP2007_Assignment2.Controllers
         //GET: Store/Browse?type=Dessert
         public ActionResult Browse(string foodType = "Dessert")
         {
-            FoodType foodTypeModel = storeDB.FoodTypes.Include("FoodType").Single(f => f.Name == foodType);
+            FoodType foodTypeModel = storeDB.FoodTypes.Include("Foods").Single(f => f.Name == foodType);
             return View(foodTypeModel);
         }
 

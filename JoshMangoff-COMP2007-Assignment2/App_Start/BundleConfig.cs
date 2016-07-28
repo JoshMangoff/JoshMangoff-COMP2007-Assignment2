@@ -25,6 +25,7 @@ namespace JoshMangoff_COMP2007_Assignment2
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css"));
         }
     }
