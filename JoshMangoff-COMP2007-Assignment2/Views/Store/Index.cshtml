@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Browse Genres</h2>
+<h2>Browse Food Types</h2>
 <p>
     Select from @Model.Count()
     Type of Food:
@@ -14,7 +14,7 @@
 <ul>
     @foreach (FoodType item in Model)
     {
-        <li> @Html.ActionLink(item.Name, "Browse", new { genre = item.Name }) </li>
+        <li> @Html.ActionLink(item.Name, "Browse", new { FoodType = item.Name }) </li>
     }
 
 </ul>
