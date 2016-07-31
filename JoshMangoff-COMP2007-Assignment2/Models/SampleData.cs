@@ -6,7 +6,7 @@ using System.Data.Entity;
 
 namespace JoshMangoff_COMP2007_Assignment2.Models
 { 
-     public class SampleData : DropCreateDatabaseIfModelChanges<FoodStoreContext> 
+     public class SampleData : DropCreateDatabaseIfModelChanges<FoodStoreContext> //DropCreateDatabaseAlways
      { 
          protected override void Seed(FoodStoreContext context)
          { 
@@ -20,6 +20,7 @@ namespace JoshMangoff_COMP2007_Assignment2.Models
  
              new List<Food> 
              { 
+                 //all images are from google images
                  new Food { Title = "Onion Rings", Description = "Description of onion rings goes here", Type = foodtypes.Single(t => t.Name == "Appetizers"), Price = 4.99M, BigImgUrl = "/Assets/images/large/placeholder.gif", SmallImgUrl = "/Assets/images/small/placeholder.gif" },
                  new Food { Title = "Garlic Bread, 3 pieces", Description = "Description of garlic bread goes here", Type = foodtypes.Single(t => t.Name == "Appetizers"), Price = 5.99M, BigImgUrl = "/Assets/images/large/placeholder.gif", SmallImgUrl = "/Assets/images/small/placeholder.gif" },
                  new Food { Title = "Large Pizza, 3 toppings", Description = "Description of large pizza goes here", Type = foodtypes.Single(t => t.Name == "Main Courses"), Price = 21.99M, BigImgUrl = "/Assets/images/large/placeholder.gif", SmallImgUrl = "/Assets/images/small/placeholder.gif" },
