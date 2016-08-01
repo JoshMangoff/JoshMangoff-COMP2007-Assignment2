@@ -218,8 +218,14 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\items\csundae.png" />
     <Content Include="Assets\images\items\garlicbread.jpg" />
+    <Content Include="Assets\images\items\lpizza.jpg" />
     <Content Include="Assets\images\items\onionrings.jpg" />
+    <Content Include="Assets\images\items\pop.png" />
+    <Content Include="Assets\images\items\ppizza.png" />
+    <Content Include="Assets\images\items\vicecream.jpg" />
+    <Content Include="Assets\images\items\water.png" />
     <Content Include="Assets\images\map.png" />
     <Content Include="Assets\images\pizzamain.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
