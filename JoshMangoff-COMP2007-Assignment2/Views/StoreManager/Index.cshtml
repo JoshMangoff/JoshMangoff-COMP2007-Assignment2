@@ -12,7 +12,7 @@
 <table class="table table-condensed">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.SmallImgUrl)
+            @Html.DisplayNameFor(model => model.ImgUrl)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Type.Name)
@@ -32,7 +32,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.SmallImgUrl)
+            <img src="@Html.DisplayFor(modelItem => item.ImgUrl)" />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Type.Name)

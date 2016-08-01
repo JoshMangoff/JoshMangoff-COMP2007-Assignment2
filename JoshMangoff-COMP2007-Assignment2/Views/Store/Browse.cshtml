@@ -1,4 +1,8 @@
-﻿@using JoshMangoff_COMP2007_Assignment2.Models
+﻿<!-- Views/Store/Browse.cshtml -->
+<!-- Josh Mangoff -->
+<!-- Pizza Place -->
+<!-- Displays all foods of the selected type in a table to select from -->
+@using JoshMangoff_COMP2007_Assignment2.Models
 @model FoodType
 
 @{
@@ -6,13 +10,29 @@
 }
 
 <h2>Browsing: @Model.Name</h2>
-<ul>
+<table class="table table-condensed">
+    <tr>
+        <th>
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Price
+        </th>
+    </tr>
     @foreach (Food food in Model.Foods)
     {
-        <li>@Html.ActionLink(food.Title, "Details", new { id = food.FoodId })</li>
+        <tr>
+            <td>
+                <img src="@Html.DisplayFor(modelItem => food.ImgUrl)" />
+            </td>
+            <td>
+                @Html.ActionLink(food.Title, "Details", new { id = food.FoodId })
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => food.Price)
+            </td>
+        </tr>
     }
-
-</ul>
-
-
-
+</table>

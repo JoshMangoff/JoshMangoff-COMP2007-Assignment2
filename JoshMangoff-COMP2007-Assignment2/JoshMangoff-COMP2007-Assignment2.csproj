@@ -218,7 +218,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\images\large\onionrings.jpg" />
+    <Content Include="Assets\images\items\garlicbread.jpg" />
+    <Content Include="Assets\images\items\onionrings.jpg" />
     <Content Include="Assets\images\map.png" />
     <Content Include="Assets\images\pizzamain.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -312,7 +313,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\images\small\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
